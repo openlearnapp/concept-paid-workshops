@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linux Grundlagen — LINUXPFAD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="owner-banner">ANBIETER-SEITE · gehört dem Kurs-Studio LINUXPFAD · NICHT Open Learn</div>
+<div class="mock-hint">Mockup für die Konzept-Diskussion — keine echte Bezahlung</div>
+
+<header class="term-bar">
+  <div class="term-bar-inner">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div class="term-dots">
+        <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+      </div>
+      <span class="brand">LINUXPFAD<span class="blink"></span></span>
+    </div>
+    <span class="term-bar-meta">Kurs-Studio · seit 2019</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-prompt">starte linux-grundlagen --jetzt</div>
+    <h1>Linux ist kein Buch mit sieben Siegeln. <span class="hl">13 Lektionen</span>, und du fühlst dich im Terminal zuhause.</h1>
+    <p class="hero-sub">
+      Kein Vorwissen nötig. Wir fangen beim Tastendruck an und enden bei einem Workflow,
+      mit dem du Dateien, Prozesse und Netzwerk sicher beherrschst. Jede Lektion mit Video,
+      Übungen und sofortiger Rückmeldung.
+    </p>
+    <div class="hero-cta">
+      <a href="https://open-learn.app/#/deutsch/linux-grundlagen/lessons" class="btn btn-green">
+        Kostenlos starten · im echten Open Learn
+      </a>
+      <a href="#preis" class="btn btn-ghost">Kompletten Kurs ansehen · 39 €</a>
+    </div>
+
+    <div class="trailer">
+      <div class="trailer-head">
+        <div class="term-dots">
+          <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+        </div>
+        <span class="file">trailer · lektion-01.mp4</span>
+        <div class="trailer-toggle" role="tablist" aria-label="Video-Stil">
+          <button class="on" data-style="svgs">SVG</button>
+          <button data-style="comfyui">Comic</button>
+        </div>
+      </div>
+      <video id="trailer-video" controls playsinline preload="metadata"
+        src="assets/videos/lektion-01-svg.mp4">
+      </video>
+      <div class="trailer-foot">
+        Aktueller Stil: <b id="style-name">Animiertes SVG</b> · 10 Lektions-Videos verfügbar, in zwei Stilen
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-label">das kannst du danach</div>
+    <h2>Konkrete Fähigkeiten, keine Theorie</h2>
+    <p class="section-intro">
+      Nach diesem Kurs sind das normale Handgriffe für dich — keine Suche bei Google mehr nötig.
+    </p>
+    <div class="outcomes">
+      <div class="outcome">
+        <div class="outcome-cmd">cd ~/projekte &amp;&amp; ls -la</div>
+        <p>Dich durch das Dateisystem bewegen, ohne nachzudenken.</p>
+      </div>
+      <div class="outcome">
+        <div class="outcome-cmd">chmod +x deploy.sh</div>
+        <p>Rechte verstehen und setzen — und wissen, warum sudo gefährlich sein kann.</p>
+      </div>
+      <div class="outcome">
+        <div class="outcome-cmd">ps aux | grep node</div>
+        <p>Prozesse finden, beobachten und beenden, wenn etwas hängt.</p>
+      </div>
+      <div class="outcome">
+        <div class="outcome-cmd">sudo apt update &amp;&amp; apt upgrade</div>
+        <p>Software installieren und das System aktuell halten.</p>
+      </div>
+      <div class="outcome">
+        <div class="outcome-cmd">ssh user@server -p 22</div>
+        <p>Dich auf entfernte Rechner verbinden und Dateien übertragen.</p>
+      </div>
+      <div class="outcome">
+        <div class="outcome-cmd">for f in *.log; do ...; done</div>
+        <p>Kleine Shell-Skripte schreiben, die dir Arbeit abnehmen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-label">wer unterrichtet</div>
+    <h2>Das Studio hinter dem Kurs</h2>
+    <div class="instructor">
+      <div class="instructor-avatar">LP</div>
+      <div>
+        <h3>LINUXPFAD</h3>
+        <div class="role">Lehr-Studio für Kommandozeile &amp; Open Source</div>
+        <p>
+          Wir bringen seit 2019 Einsteigern bei, wie man sich auf der Kommandozeile zuhause fühlt.
+          Kein Fachjargon ohne Erklärung, kein Überspringen von Grundlagen. Dieser Kurs ist aus
+          hunderten echten Anfänger-Fragen entstanden — wir wissen, wo Menschen hängenbleiben,
+          und genau dort setzen wir an.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-label">lehrplan · 13 lektionen</div>
+    <h2>Der komplette Weg</h2>
+    <p class="section-intro">
+      Lektion 1 und 2 sind kostenlos — starte sofort, ohne etwas zu kaufen. Die übrigen 11 Lektionen
+      schaltest du mit dem Kauf frei.
+    </p>
+
+    <div class="curriculum">
+
+      <div class="lesson lesson--free">
+        <div class="lesson-no">01</div>
+        <div class="lesson-info">
+          <h4>Wie funktioniert ein Computer?</h4>
+          <p>Vom Tastendruck bis zum Pixel — die Grundlage, bevor es um Linux geht.</p>
+        </div>
+        <span class="lesson-tag tag-free">KOSTENLOS</span>
+      </div>
+
+      <div class="lesson lesson--free">
+        <div class="lesson-no">02</div>
+        <div class="lesson-info">
+          <h4>Was ist Linux?</h4>
+          <p>Geschichte, Distributionen, und warum Linux die halbe Welt antreibt.</p>
+        </div>
+        <span class="lesson-tag tag-free">KOSTENLOS</span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">03</div>
+        <div class="lesson-info">
+          <h4>Das Terminal — erste Schritte</h4>
+          <p>pwd, ls, cd — und keine Angst mehr vor dem schwarzen Fenster.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">04</div>
+        <div class="lesson-info">
+          <h4>Dateien &amp; Ordner</h4>
+          <p>touch, mkdir, cp, mv, rm — das tägliche Handwerkszeug.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">05</div>
+        <div class="lesson-info">
+          <h4>Dateiinhalt</h4>
+          <p>cat, less, head, tail, grep — Inhalte lesen und durchsuchen.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">06</div>
+        <div class="lesson-info">
+          <h4>Berechtigungen</h4>
+          <p>chmod, chown, rwx, sudo — wer darf was, und warum.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">07</div>
+        <div class="lesson-info">
+          <h4>Prozesse</h4>
+          <p>ps, top, kill — sehen, was läuft, und eingreifen, wenn nötig.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">08</div>
+        <div class="lesson-info">
+          <h4>Paketverwaltung</h4>
+          <p>apt, snap, update, upgrade — Software sauber installieren.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">09</div>
+        <div class="lesson-info">
+          <h4>Netzwerk</h4>
+          <p>ping, curl, wget, ssh — verbinden, herunterladen, übertragen.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">10</div>
+        <div class="lesson-info">
+          <h4>Shell Scripting Basics</h4>
+          <p>Variablen, if, Schleifen — Befehle zu Skripten verbinden.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">11</div>
+        <div class="lesson-info">
+          <h4>Vim &amp; Texteditoren</h4>
+          <p>vim, nano — Dateien direkt im Terminal bearbeiten.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson-no">12</div>
+        <div class="lesson-info">
+          <h4>Systeminformationen</h4>
+          <p>df, du, free, uname — den Zustand des Systems ablesen.</p>
+        </div>
+        <span class="lesson-tag tag-locked">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          PREMIUM
+        </span>
+      </div>
+
+      <div class="lesson lesson--premium">
+        <div class="lesson-no">13</div>
+        <div class="lesson-info">
+          <h4>Professioneller Linux-Workflow</h4>
+          <p>Pipes, Redirects, Aliases — alles zusammen zum flüssigen Arbeiten.</p>
+        </div>
+        <span class="lesson-tag tag-premium">ABSCHLUSS</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="preis">
+  <div class="wrap">
+    <div class="section-label">preis</div>
+    <h2>Einmal kaufen, für immer behalten</h2>
+    <p class="section-intro">
+      Kein Abo. Der Kauf läuft direkt zwischen dir und LINUXPFAD. Open Learn bekommt keinen Cent
+      und sieht von dem Kauf nichts.
+    </p>
+
+    <div class="pricing">
+      <div class="pricing-left">
+        <h3>Im Komplettkurs enthalten</h3>
+        <ul>
+          <li>Alle 13 Lektionen dauerhaft freigeschaltet</li>
+          <li>10 Lektions-Videos in zwei Stilen — SVG-animiert und Comic</li>
+          <li>Übungen mit sofortiger Rückmeldung in jeder Lektion</li>
+          <li>Fortschritt synchronisiert über deine Geräte</li>
+          <li>Inhalt auf Deutsch und Englisch</li>
+          <li>Updates ohne Aufpreis, wenn Lektionen erweitert werden</li>
+        </ul>
+      </div>
+      <div class="pricing-right">
+        <div class="price">39<small> €</small></div>
+        <div class="price-note">einmalig · 14 Tage Geld-zurück-Garantie</div>
+        <a href="checkout.html" class="btn btn-amber checkout-pay">Komplettkurs freischalten</a>
+        <a href="https://open-learn.app/#/deutsch/linux-grundlagen/lessons" class="btn btn-ghost checkout-pay" style="margin-top:10px">Erst kostenlos reinschauen</a>
+        <div class="pay-methods">Stripe · Kreditkarte · SEPA · PayPal</div>
+      </div>
+    </div>
+
+    <div class="flow-note">
+      <h4>// so läuft das technisch ab</h4>
+      <ol>
+        <li>Du kaufst hier auf dieser Seite. Die Zahlung geht direkt an LINUXPFAD.</li>
+        <li>Du bekommst sofort eine E-Mail mit deinem persönlichen Freischalt-Link.</li>
+        <li>Der Link öffnet den Kurs in Open Learn — der kostenlosen Lern-App.</li>
+        <li>Open Learn zeigt dann alle 13 Lektionen. Es weiß nicht, dass du bezahlt hast — der Link genügt.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-label">häufige fragen</div>
+    <h2>Bevor du kaufst</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h4>Brauche ich Vorkenntnisse?</h4>
+        <p>Nein. Lektion 1 beginnt damit, wie ein Computer überhaupt funktioniert. Wenn du eine Maus bedienen kannst, kannst du diesen Kurs.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Was ist Open Learn — kaufe ich dort?</h4>
+        <p>Nein. Open Learn ist nur die kostenlose Lern-App, in der die Lektionen abgespielt werden. Gekauft wird hier bei LINUXPFAD. Open Learn fasst kein Geld an.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Kann ich vorher reinschauen?</h4>
+        <p>Ja. Lektion 1 und 2 sind komplett kostenlos. Klick auf „Kostenlos starten" — kein Konto, keine Kreditkarte.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Auf welchen Geräten läuft der Kurs?</h4>
+        <p>Überall, wo ein Browser läuft — Computer, Tablet, Handy. Dein Fortschritt wird zwischen den Geräten synchronisiert.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Was, wenn er mir nicht gefällt?</h4>
+        <p>14 Tage Geld-zurück-Garantie, ohne Begründung. Schreib uns eine Mail, du bekommst den vollen Betrag zurück.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <div>
+      LINUXPFAD · Kurs-Studio<br>
+      gehostet auf <a href="#">github.io/linuxpfad-linux-grundlagen</a>
+    </div>
+    <div>
+      Abgespielt in <a href="https://open-learn.app/">Open Learn</a> · der freien Lern-Plattform
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var v = document.getElementById('trailer-video');
+    var name = document.getElementById('style-name');
+    var btns = document.querySelectorAll('.trailer-toggle button');
+    var src = {
+      svgs: 'assets/videos/lektion-01-svg.mp4',
+      comfyui: 'assets/videos/lektion-01-comic.mp4'
+    };
+    var label = { svgs: 'Animiertes SVG', comfyui: 'Comic-Stil' };
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var s = b.dataset.style;
+        btns.forEach(function (x) { x.classList.toggle('on', x === b); });
+        var playing = !v.paused;
+        v.src = src[s];
+        v.load();
+        if (playing) v.play().catch(function () {});
+        name.textContent = label[s];
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060d24"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="boxLanding" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(245,158,11,0.15)"/>
+      <stop offset="1" stop-color="rgba(245,158,11,0.03)"/>
+    </linearGradient>
+    <linearGradient id="boxOpenLearn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(16,185,129,0.15)"/>
+      <stop offset="1" stop-color="rgba(6,182,212,0.03)"/>
+    </linearGradient>
+    <linearGradient id="boxCreator" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(168,85,247,0.18)"/>
+      <stop offset="1" stop-color="rgba(168,85,247,0.04)"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="540" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" fill="#f1f5f9" font-size="22" font-weight="800">Zwei-System-Architektur</text>
+  <text x="450" y="64" text-anchor="middle" fill="#94a3b8" font-size="13">Open Learn ist Renderer · Landing-Page ist Verkäufer · beide getrennt</text>
+
+  <!-- LEFT: Landing Page -->
+  <rect x="60" y="110" width="320" height="180" rx="16" fill="url(#boxLanding)" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="220" y="140" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="700" letter-spacing="2">LANDING-PAGE</text>
+  <text x="220" y="168" text-anchor="middle" fill="#f1f5f9" font-size="17" font-weight="700">Workshop-Verkaufsseite</text>
+  <text x="220" y="186" text-anchor="middle" fill="#94a3b8" font-size="12">eine pro Workshop · gehostet vom Anbieter</text>
+
+  <line x1="100" y1="208" x2="340" y2="208" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+
+  <text x="100" y="228" fill="#cbd5e1" font-size="12.5">· statisches HTML</text>
+  <text x="100" y="246" fill="#cbd5e1" font-size="12.5">· Backend erlaubt (Stripe-Webhook)</text>
+  <text x="100" y="264" fill="#cbd5e1" font-size="12.5">· verifiziert Käufe, erzeugt Freischalt-Link</text>
+  <text x="100" y="282" fill="#cbd5e1" font-size="12.5">· schickt Mail an Käufer</text>
+
+  <!-- RIGHT: Open Learn -->
+  <rect x="520" y="110" width="320" height="180" rx="16" fill="url(#boxOpenLearn)" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="680" y="140" text-anchor="middle" fill="#10b981" font-size="11" font-weight="700" letter-spacing="2">OPEN LEARN</text>
+  <text x="680" y="168" text-anchor="middle" fill="#f1f5f9" font-size="17" font-weight="700">Lern-Plattform</text>
+  <text x="680" y="186" text-anchor="middle" fill="#94a3b8" font-size="12">eine zentral · open-learn.app</text>
+
+  <line x1="560" y1="208" x2="800" y2="208" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+
+  <text x="560" y="228" fill="#cbd5e1" font-size="12.5">· statische Vue-App</text>
+  <text x="560" y="246" fill="#cbd5e1" font-size="12.5">· kein Backend, keine Accounts</text>
+  <text x="560" y="264" fill="#cbd5e1" font-size="12.5">· lädt YAML von angegebener URL</text>
+  <text x="560" y="282" fill="#cbd5e1" font-size="12.5">· rendert was sie bekommt</text>
+
+  <!-- Arrow Landing → Open Learn -->
+  <path d="M 380 200 C 430 200 470 200 520 200" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)" stroke-dasharray="0"/>
+  <text x="450" y="190" text-anchor="middle" fill="#cbd5e1" font-size="11.5">Freischalt-URL</text>
+  <text x="450" y="220" text-anchor="middle" fill="#64748b" font-size="10.5">(per Mail an Käufer · Käufer klickt)</text>
+
+  <!-- BOTTOM: Creator -->
+  <rect x="280" y="370" width="340" height="120" rx="16" fill="url(#boxCreator)" stroke="#a78bfa" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="450" y="400" text-anchor="middle" fill="#a78bfa" font-size="11" font-weight="700" letter-spacing="2">ANBIETER</text>
+  <text x="450" y="428" text-anchor="middle" fill="#f1f5f9" font-size="17" font-weight="700">Workshop-Ersteller</text>
+  <text x="450" y="452" text-anchor="middle" fill="#cbd5e1" font-size="12.5">stellt Inhalte bereit · entscheidet Preis</text>
+  <text x="450" y="470" text-anchor="middle" fill="#94a3b8" font-size="11.5">hostet YAML + Bilder + Audio + Videos selbst</text>
+
+  <!-- Lines from creator -->
+  <line x1="350" y1="370" x2="220" y2="290" stroke="rgba(168,85,247,0.4)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="550" y1="370" x2="680" y2="290" stroke="rgba(168,85,247,0.4)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="265" y="340" text-anchor="middle" fill="#94a3b8" font-size="10.5">betreibt</text>
+  <text x="635" y="340" text-anchor="middle" fill="#94a3b8" font-size="10.5">hostet YAML</text>
+
+  <!-- Footnote -->
+  <text x="450" y="525" text-anchor="middle" fill="#64748b" font-size="11">Geld fließt nie durch Open Learn · Open Learn weiß nicht wer gekauft hat</text>
+</svg>

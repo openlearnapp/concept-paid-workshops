@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060d24"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(16,185,129,0.18)"/>
+      <stop offset="1" stop-color="rgba(16,185,129,0.03)"/>
+    </linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(6,182,212,0.18)"/>
+      <stop offset="1" stop-color="rgba(6,182,212,0.03)"/>
+    </linearGradient>
+    <linearGradient id="cardC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(168,85,247,0.18)"/>
+      <stop offset="1" stop-color="rgba(168,85,247,0.03)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="720" fill="url(#bg)"/>
+
+  <text x="450" y="42" text-anchor="middle" fill="#f1f5f9" font-size="22" font-weight="800">Drei Wege, Zugang ohne Backend in Open Learn zu verifizieren</text>
+  <text x="450" y="66" text-anchor="middle" fill="#94a3b8" font-size="13">Vergleich · Vor- und Nachteile · für die Diskussion mit Felix</text>
+
+  <!-- Option A -->
+  <rect x="60" y="100" width="780" height="180" rx="16" fill="url(#cardA)" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="90" y="130" fill="#10b981" font-size="11" font-weight="700" letter-spacing="2">OPTION A</text>
+  <text x="90" y="158" fill="#f1f5f9" font-size="18" font-weight="800">Unrate-bare URL (Path-as-Secret)</text>
+  <text x="90" y="180" fill="#cbd5e1" font-size="13">Bezahlte Inhalte liegen unter einem langen Zufalls-Pfad. Wer den Pfad nicht kennt, findet sie nicht.</text>
+
+  <text x="90" y="212" fill="#94a3b8" font-size="11" font-weight="700" letter-spacing="1">BEISPIEL-URL</text>
+  <rect x="88" y="220" width="600" height="32" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="98" y="240" fill="#10b981" font-size="11" font-family="ui-monospace, monospace">creator.github.io/workshop/unlock-a8f3b2c1d4e5f6/index.yaml</text>
+
+  <text x="700" y="212" fill="#10b981" font-size="11" font-weight="700">VORTEIL</text>
+  <text x="700" y="228" fill="#cbd5e1" font-size="11.5">· Zero Code in Open Learn</text>
+  <text x="700" y="244" fill="#cbd5e1" font-size="11.5">· Pure statisches Hosting</text>
+  <text x="700" y="260" fill="#ef4444" font-size="11" font-weight="700">NACHTEIL</text>
+  <text x="700" y="276" fill="#cbd5e1" font-size="11.5">· Link teilbar · keine Sperrung</text>
+
+  <!-- Option B -->
+  <rect x="60" y="300" width="780" height="180" rx="16" fill="url(#cardB)" stroke="#06b6d4" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="90" y="330" fill="#06b6d4" font-size="11" font-weight="700" letter-spacing="2">OPTION B</text>
+  <text x="90" y="358" fill="#f1f5f9" font-size="18" font-weight="800">Signierte Tokens (JWT)</text>
+  <text x="90" y="380" fill="#cbd5e1" font-size="13">Backend signiert einen Token mit Käufer-ID und Ablauf. Open Learn prüft Signatur im Browser.</text>
+
+  <text x="90" y="412" fill="#94a3b8" font-size="11" font-weight="700" letter-spacing="1">BEISPIEL-URL</text>
+  <rect x="88" y="420" width="600" height="32" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="98" y="440" fill="#06b6d4" font-size="11" font-family="ui-monospace, monospace">open-learn.app/#/add?source=...&amp;token=eyJhbGciOiJSUzI1...</text>
+
+  <text x="700" y="412" fill="#10b981" font-size="11" font-weight="700">VORTEIL</text>
+  <text x="700" y="428" fill="#cbd5e1" font-size="11.5">· Zeitlich begrenzbar</text>
+  <text x="700" y="444" fill="#cbd5e1" font-size="11.5">· Widerrufbar via Blocklist</text>
+  <text x="700" y="460" fill="#ef4444" font-size="11" font-weight="700">NACHTEIL</text>
+  <text x="700" y="476" fill="#cbd5e1" font-size="11.5">· JWT-Logik in Open Learn nötig</text>
+
+  <!-- Option C -->
+  <rect x="60" y="500" width="780" height="180" rx="16" fill="url(#cardC)" stroke="#a78bfa" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="90" y="530" fill="#a78bfa" font-size="11" font-weight="700" letter-spacing="2">OPTION C</text>
+  <text x="90" y="558" fill="#f1f5f9" font-size="18" font-weight="800">Verschlüsselte Inhalte</text>
+  <text x="90" y="580" fill="#cbd5e1" font-size="13">YAML wird mit einem Schlüssel verschlüsselt. Schlüssel kommt im Freischalt-Link, Browser entschlüsselt.</text>
+
+  <text x="90" y="612" fill="#94a3b8" font-size="11" font-weight="700" letter-spacing="1">BEISPIEL-URL</text>
+  <rect x="88" y="620" width="600" height="32" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="98" y="640" fill="#a78bfa" font-size="11" font-family="ui-monospace, monospace">open-learn.app/#/add?source=...&amp;key=GxF7s2pV1qLm9Z4wK</text>
+
+  <text x="700" y="612" fill="#10b981" font-size="11" font-weight="700">VORTEIL</text>
+  <text x="700" y="628" fill="#cbd5e1" font-size="11.5">· Inhalte auf jedem Host sicher</text>
+  <text x="700" y="644" fill="#cbd5e1" font-size="11.5">· Datei unbrauchbar ohne Key</text>
+  <text x="700" y="660" fill="#ef4444" font-size="11" font-weight="700">NACHTEIL</text>
+  <text x="700" y="676" fill="#cbd5e1" font-size="11.5">· Crypto-Logik in Open Learn nötig</text>
+
+</svg>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bezahlung — LINUXPFAD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="owner-banner">ANBIETER-SEITE · Bezahlung läuft beim Studio LINUXPFAD · NICHT bei Open Learn</div>
+<div class="mock-hint">Mockup — keine echte Bezahlung. „Bezahlen" führt zur Freischalt-Mail.</div>
+
+<header class="term-bar">
+  <div class="term-bar-inner">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div class="term-dots">
+        <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+      </div>
+      <span class="brand">LINUXPFAD<span class="blink"></span></span>
+    </div>
+    <span class="term-bar-meta">Bezahlung · gesichert</span>
+  </div>
+</header>
+
+<div class="checkout-wrap">
+  <div class="checkout-top">
+    <b>Komplettkurs freischalten</b>
+    <span>Stripe</span>
+  </div>
+  <div class="checkout-body">
+
+    <div class="checkout-sum">
+      <div class="checkout-sum-row">
+        <span>Linux Grundlagen — Komplettkurs</span>
+        <span>39,00 €</span>
+      </div>
+      <div class="checkout-sum-row">
+        <span>enthaltene MwSt.</span>
+        <span>6,23 €</span>
+      </div>
+      <div class="checkout-sum-total">
+        <span>Gesamt</span>
+        <span>39,00 €</span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>E-Mail (hierhin kommt dein Freischalt-Link)</label>
+      <input type="email" value="anna@example.com" readonly>
+    </div>
+    <div class="field">
+      <label>Kartennummer</label>
+      <input type="text" value="4242 4242 4242 4242" readonly>
+    </div>
+    <div class="field field-2">
+      <input type="text" value="12 / 28" readonly>
+      <input type="text" value="123" readonly>
+    </div>
+    <div class="field">
+      <label>Name auf der Karte</label>
+      <input type="text" value="Anna Bauer" readonly>
+    </div>
+
+    <a href="unlock-email.html" class="btn btn-amber checkout-pay">39,00 € bezahlen</a>
+
+    <div class="checkout-foot">
+      Die Zahlung geht direkt an das Studio LINUXPFAD.<br>
+      Open Learn ist an dieser Bezahlung nicht beteiligt.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+# VORSCHAU: nur die 2 kostenlosen Lektionen.
+# Open Learn zeigt genau das, was hier steht — mehr nicht.
+lessons:
+  - 00-wie-funktioniert-computer
+  - 01-was-ist-linux
