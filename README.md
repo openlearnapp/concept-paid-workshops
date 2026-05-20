@@ -26,7 +26,7 @@ Architektur-Konzept und Fallbeispiel für bezahlte Workshops auf Open Learn.
 Live im Browser öffnen — kein Setup, kein Server nötig:
 
 ```
-https://openlearnapp.github.io/concept-paid-workshops/fallbeispiel/1-ANBIETER/landing-page/
+https://open-learn.app/concept-paid-workshops/fallbeispiel/1-ANBIETER/landing-page/
 ```
 
 Von dort durchklicken: Kostenlos starten → Kaufen → Bezahlen → Freischalt-Mail → Vollzugang.
