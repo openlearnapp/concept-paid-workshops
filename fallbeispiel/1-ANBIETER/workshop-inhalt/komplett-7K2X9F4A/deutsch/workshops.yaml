@@ -1,0 +1,9 @@
+workshops:
+  - folder: linux-grundlagen
+    code: de-DE
+    title: "Linux Grundlagen"
+    description: "13 Lektionen fuer absolute Anfaenger — vom Tastendruck durch die Hardware bis zum professionellen Linux-Workflow."
+    color: "210 35% 94%"
+    primaryColor: "210 70% 42%"
+    image: "linux-grundlagen/thumbnail.svg"
+    labels: ["IT"]

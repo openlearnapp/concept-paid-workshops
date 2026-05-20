@@ -1,0 +1,16 @@
+# VOLLZUGANG: alle 13 Lektionen.
+# Gleiche Workshop-Struktur wie die Vorschau — nur diese Liste ist laenger.
+lessons:
+  - 00-wie-funktioniert-computer
+  - 01-was-ist-linux
+  - 02-terminal-erste-schritte
+  - 03-dateien-ordner
+  - 04-dateiinhalt
+  - 05-berechtigungen
+  - 06-prozesse
+  - 07-paketverwaltung
+  - 08-netzwerk
+  - 09-shell-scripting
+  - 10-vim-texteditor
+  - 11-system-info
+  - 12-linux-workflow

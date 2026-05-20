@@ -1,0 +1,5 @@
+# Oeffentlicher Einstiegspunkt — VORSCHAU
+# Liegt unter einer normalen, oeffentlichen URL.
+languages:
+  - folder: deutsch
+    code: de-DE
