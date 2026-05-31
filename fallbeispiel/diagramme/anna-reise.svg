@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060d24"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="stepCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0.06)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="720" fill="url(#bg)"/>
+
+  <text x="450" y="42" text-anchor="middle" fill="#f1f5f9" font-size="22" font-weight="800">Anna's Reise vom Entdecken bis zum Lernen</text>
+  <text x="450" y="66" text-anchor="middle" fill="#94a3b8" font-size="13">Sechs Schritte · Open Learn nur bei Schritt 2 und 6 involviert</text>
+
+  <!-- Step 1 -->
+  <rect x="60" y="110" width="380" height="86" rx="14" fill="url(#stepCard)" stroke="rgba(255,255,255,0.12)"/>
+  <circle cx="100" cy="153" r="22" fill="#f59e0b"/>
+  <text x="100" y="160" text-anchor="middle" fill="#060d24" font-size="18" font-weight="800">1</text>
+  <text x="140" y="148" fill="#f1f5f9" font-size="15" font-weight="700">Entdeckung</text>
+  <text x="140" y="170" fill="#cbd5e1" font-size="12.5">Anna landet auf der Workshop-Landing-Page,</text>
+  <text x="140" y="186" fill="#cbd5e1" font-size="12.5">z.B. über Google, Social Media oder Empfehlung.</text>
+  <text x="420" y="120" text-anchor="end" fill="#f59e0b" font-size="10" font-weight="700" letter-spacing="1">LANDING-PAGE</text>
+
+  <!-- Step 2 -->
+  <rect x="460" y="110" width="380" height="86" rx="14" fill="url(#stepCard)" stroke="rgba(16,185,129,0.25)"/>
+  <circle cx="500" cy="153" r="22" fill="#10b981"/>
+  <text x="500" y="160" text-anchor="middle" fill="#060d24" font-size="18" font-weight="800">2</text>
+  <text x="540" y="148" fill="#f1f5f9" font-size="15" font-weight="700">Kostenlose Vorschau</text>
+  <text x="540" y="170" fill="#cbd5e1" font-size="12.5">Klick auf „Kostenlos starten" — Open Learn lädt</text>
+  <text x="540" y="186" fill="#cbd5e1" font-size="12.5">die Public-YAML und zeigt 3 Lektionen.</text>
+  <text x="820" y="120" text-anchor="end" fill="#10b981" font-size="10" font-weight="700" letter-spacing="1">OPEN LEARN</text>
+
+  <!-- Arrows down -->
+  <path d="M 250 200 L 250 230" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <path d="M 650 200 L 650 230" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Step 3 -->
+  <rect x="60" y="240" width="380" height="86" rx="14" fill="url(#stepCard)" stroke="rgba(255,255,255,0.12)"/>
+  <circle cx="100" cy="283" r="22" fill="#f59e0b"/>
+  <text x="100" y="290" text-anchor="middle" fill="#060d24" font-size="18" font-weight="800">3</text>
+  <text x="140" y="278" fill="#f1f5f9" font-size="15" font-weight="700">Entscheidung</text>
+  <text x="140" y="300" fill="#cbd5e1" font-size="12.5">Anna ist überzeugt und will alle 10 Lektionen.</text>
+  <text x="140" y="316" fill="#cbd5e1" font-size="12.5">Sie geht zurück auf die Landing-Page.</text>
+  <text x="420" y="250" text-anchor="end" fill="#f59e0b" font-size="10" font-weight="700" letter-spacing="1">LANDING-PAGE</text>
+
+  <!-- Step 4 -->
+  <rect x="460" y="240" width="380" height="86" rx="14" fill="url(#stepCard)" stroke="rgba(245,158,11,0.3)"/>
+  <circle cx="500" cy="283" r="22" fill="#f59e0b"/>
+  <text x="500" y="290" text-anchor="middle" fill="#060d24" font-size="18" font-weight="800">4</text>
+  <text x="540" y="278" fill="#f1f5f9" font-size="15" font-weight="700">Bezahlung</text>
+  <text x="540" y="300" fill="#cbd5e1" font-size="12.5">Stripe-Checkout · 29 € · Open Learn ist nicht beteiligt.</text>
+  <text x="540" y="316" fill="#cbd5e1" font-size="12.5">Anbieter-Backend verifiziert den Kauf.</text>
+  <text x="820" y="250" text-anchor="end" fill="#f59e0b" font-size="10" font-weight="700" letter-spacing="1">LANDING-PAGE BACKEND</text>
+
+  <!-- Arrows down -->
+  <path d="M 250 330 L 250 360" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <path d="M 650 330 L 650 360" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Step 5 -->
+  <rect x="60" y="370" width="380" height="86" rx="14" fill="url(#stepCard)" stroke="rgba(255,255,255,0.12)"/>
+  <circle cx="100" cy="413" r="22" fill="#f59e0b"/>
+  <text x="100" y="420" text-anchor="middle" fill="#060d24" font-size="18" font-weight="800">5</text>
+  <text x="140" y="408" fill="#f1f5f9" font-size="15" font-weight="700">Freischalt-Mail</text>
+  <text x="140" y="430" fill="#cbd5e1" font-size="12.5">Anna bekommt eine Mail mit einem einzigartigen</text>
+  <text x="140" y="446" fill="#cbd5e1" font-size="12.5">Link · enthält unrate-baren Pfad.</text>
+  <text x="420" y="380" text-anchor="end" fill="#f59e0b" font-size="10" font-weight="700" letter-spacing="1">LANDING-PAGE BACKEND</text>
+
+  <!-- Step 6 -->
+  <rect x="460" y="370" width="380" height="86" rx="14" fill="url(#stepCard)" stroke="rgba(16,185,129,0.25)"/>
+  <circle cx="500" cy="413" r="22" fill="#10b981"/>
+  <text x="500" y="420" text-anchor="middle" fill="#060d24" font-size="18" font-weight="800">6</text>
+  <text x="540" y="408" fill="#f1f5f9" font-size="15" font-weight="700">Vollzugang</text>
+  <text x="540" y="430" fill="#cbd5e1" font-size="12.5">Klick auf Link · Open Learn lädt jetzt die Unlock-YAML</text>
+  <text x="540" y="446" fill="#cbd5e1" font-size="12.5">mit allen 10 Lektionen · Anna lernt los.</text>
+  <text x="820" y="380" text-anchor="end" fill="#10b981" font-size="10" font-weight="700" letter-spacing="1">OPEN LEARN</text>
+
+  <!-- Bottom: timeline summary -->
+  <rect x="60" y="510" width="780" height="160" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="450" y="540" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Was Open Learn sieht versus was es nicht sieht</text>
+
+  <circle cx="120" cy="580" r="6" fill="#10b981"/>
+  <text x="138" y="585" fill="#cbd5e1" font-size="12.5">Open Learn sieht: zwei URLs, lädt was darin steht, rendert es.</text>
+
+  <circle cx="120" cy="606" r="6" fill="#10b981"/>
+  <text x="138" y="611" fill="#cbd5e1" font-size="12.5">Open Learn sieht: welche Lektionen, Bilder, Videos die YAML auflistet.</text>
+
+  <circle cx="120" cy="632" r="6" fill="#ef4444"/>
+  <text x="138" y="637" fill="#cbd5e1" font-size="12.5">Open Learn sieht NICHT: wer Anna ist, dass sie bezahlt hat, wie viel sie bezahlt hat.</text>
+
+  <circle cx="120" cy="658" r="6" fill="#ef4444"/>
+  <text x="138" y="663" fill="#cbd5e1" font-size="12.5">Open Learn sieht NICHT: ob der Link einmalig oder geteilt ist.</text>
+
+</svg>

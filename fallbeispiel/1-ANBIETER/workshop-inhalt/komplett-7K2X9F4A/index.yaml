@@ -1,0 +1,6 @@
+# Geheimer Einstiegspunkt — VOLLZUGANG
+# Liegt unter einer nicht erratbaren URL. In echt: langer Zufalls-String,
+# pro Kaeufer vom Verkauf-Backend erzeugt.
+languages:
+  - folder: deutsch
+    code: de-DE

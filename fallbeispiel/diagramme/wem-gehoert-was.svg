@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e16"/>
+      <stop offset="1" stop-color="#141821"/>
+    </linearGradient>
+    <linearGradient id="anbieterBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(63,185,80,0.16)"/>
+      <stop offset="1" stop-color="rgba(63,185,80,0.03)"/>
+    </linearGradient>
+    <linearGradient id="openlearnBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(129,140,248,0.18)"/>
+      <stop offset="1" stop-color="rgba(6,182,212,0.04)"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#bg)"/>
+
+  <text x="450" y="42" text-anchor="middle" fill="#f1f5f9" font-size="22" font-weight="800">Wem gehört was?</text>
+  <text x="450" y="65" text-anchor="middle" fill="#94a3b8" font-size="13">Der Anbieter besitzt Inhalt, Verkauf und Marke. Open Learn besitzt das Abspielen.</text>
+
+  <!-- ANBIETER box -->
+  <rect x="50" y="95" width="380" height="400" rx="16" fill="url(#anbieterBox)" stroke="#3fb950" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="240" y="128" text-anchor="middle" fill="#3fb950" font-size="13" font-weight="700" letter-spacing="2" font-family="ui-monospace, monospace">1 · ANBIETER</text>
+  <text x="240" y="150" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">Studio LINUXPFAD (Beispiel)</text>
+  <line x1="80" y1="166" x2="400" y2="166" stroke="rgba(63,185,80,0.25)" stroke-width="1"/>
+
+  <g font-family="ui-monospace, monospace">
+    <rect x="80" y="182" width="320" height="58" rx="8" fill="rgba(63,185,80,0.07)" stroke="rgba(63,185,80,0.2)"/>
+    <text x="96" y="206" fill="#3fb950" font-size="12.5" font-weight="700">workshop-inhalt/</text>
+    <text x="96" y="226" fill="#cbd5e1" font-size="11">Lektionen als YAML — frei + bezahlt</text>
+
+    <rect x="80" y="252" width="320" height="58" rx="8" fill="rgba(63,185,80,0.07)" stroke="rgba(63,185,80,0.2)"/>
+    <text x="96" y="276" fill="#3fb950" font-size="12.5" font-weight="700">landing-page/</text>
+    <text x="96" y="296" fill="#cbd5e1" font-size="11">Verkaufs-Seite · eigener Marken-Stil</text>
+
+    <rect x="80" y="322" width="320" height="58" rx="8" fill="rgba(63,185,80,0.07)" stroke="rgba(63,185,80,0.2)"/>
+    <text x="96" y="346" fill="#3fb950" font-size="12.5" font-weight="700">verkauf-backend/</text>
+    <text x="96" y="366" fill="#cbd5e1" font-size="11">Prüft Zahlung · erzeugt Freischalt-Link</text>
+
+    <rect x="80" y="392" width="320" height="58" rx="8" fill="rgba(63,185,80,0.07)" stroke="rgba(63,185,80,0.2)"/>
+    <text x="96" y="416" fill="#3fb950" font-size="12.5" font-weight="700">Marke · Preis · Geld</text>
+    <text x="96" y="436" fill="#cbd5e1" font-size="11">Anbieter kassiert direkt, behält 100 %</text>
+  </g>
+
+  <text x="240" y="478" text-anchor="middle" fill="#94a3b8" font-size="11">Hosting wählt der Anbieter selbst (GitHub Pages, Server, IPFS)</text>
+
+  <!-- OPENLEARN box -->
+  <rect x="470" y="95" width="380" height="400" rx="16" fill="url(#openlearnBox)" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="660" y="128" text-anchor="middle" fill="#818cf8" font-size="13" font-weight="700" letter-spacing="2">2 · OPEN LEARN</text>
+  <text x="660" y="150" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">Die Lern-Plattform</text>
+  <line x1="500" y1="166" x2="820" y2="166" stroke="rgba(129,140,248,0.25)" stroke-width="1"/>
+
+  <rect x="500" y="182" width="320" height="58" rx="8" fill="rgba(129,140,248,0.08)" stroke="rgba(129,140,248,0.22)"/>
+  <text x="516" y="206" fill="#a5b4fc" font-size="12.5" font-weight="700">Der Renderer</text>
+  <text x="516" y="226" fill="#cbd5e1" font-size="11">Verwandelt jede YAML in einen Kurs</text>
+
+  <rect x="500" y="252" width="320" height="58" rx="8" fill="rgba(129,140,248,0.08)" stroke="rgba(129,140,248,0.22)"/>
+  <text x="516" y="276" fill="#a5b4fc" font-size="12.5" font-weight="700">Einheitlicher Lern-Stil</text>
+  <text x="516" y="296" fill="#cbd5e1" font-size="11">Alle Kurse sehen im Lernen gleich aus</text>
+
+  <rect x="500" y="322" width="320" height="58" rx="8" fill="rgba(129,140,248,0.08)" stroke="rgba(129,140,248,0.22)"/>
+  <text x="516" y="346" fill="#a5b4fc" font-size="12.5" font-weight="700">Lern-Funktionen</text>
+  <text x="516" y="366" fill="#cbd5e1" font-size="11">Quiz · Audio · Video · Fortschritt · Coach</text>
+
+  <rect x="500" y="392" width="320" height="58" rx="8" fill="rgba(129,140,248,0.08)" stroke="rgba(129,140,248,0.22)"/>
+  <text x="516" y="416" fill="#a5b4fc" font-size="12.5" font-weight="700">Library open-learn.js</text>
+  <text x="516" y="436" fill="#cbd5e1" font-size="11">Geteilte Vorlage für alle Landing-Pages</text>
+
+  <text x="660" y="478" text-anchor="middle" fill="#94a3b8" font-size="11">Kein Geld · keine Konten · kein Backend</text>
+
+  <!-- Connecting arrow -->
+  <path d="M 430 295 C 448 295 452 295 470 295" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="450" y="285" text-anchor="middle" fill="#cbd5e1" font-size="9">YAML-URL</text>
+
+  <!-- Footer -->
+  <text x="450" y="540" text-anchor="middle" fill="#64748b" font-size="11.5">Der Anbieter gibt Open Learn nur eine URL. Open Learn lädt sie und rendert — sonst nichts.</text>
+  <text x="450" y="565" text-anchor="middle" fill="#64748b" font-size="11.5">Geld, Käufer-Daten und Marke bleiben komplett beim Anbieter.</text>
+</svg>
