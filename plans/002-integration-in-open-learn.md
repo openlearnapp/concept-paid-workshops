@@ -2,38 +2,46 @@
 
 ## Ziel
 
-Das Konzept aus `specs/001-paid-workshops.md` in der produktiven Open-Learn-App umsetzen, sodass Anbieter ihre Workshops als Premium markieren können und Lernende sie kaufen + freischalten können.
+Das Konzept aus `specs/001-paid-workshops.md` in der produktiven Open-Learn-App umsetzen. Open Learn lernt eine **Plattform-Funktion** kennen: jeder Anbieter kann in seiner eigenen `workshops.yaml` selbst entscheiden, ob sein Workshop kostenlos, ganz Premium oder mit freier Vorschau angeboten wird. Kein extra Repo, kein Nachbau — die Anpassung lebt in der App selbst.
 
-## Aufteilung in PRs (1 Sektion = 1 PR)
+## Was Anbieter entscheiden können
 
-Die Implementierung läuft im Plattform-Repo `openlearnapp/openlearnapp.github.io` und ist in mehrere PRs aufgeteilt, damit jede Sektion einzeln reviewbar bleibt:
+Drei Modi, alle in `workshops.yaml`:
 
-1. **Quiz-Bot entfernen** — Voraussetzung für ruhigen Lese-Flow, unabhängig vom Premium-System (gemerged 2026-05-31)
-2. **Premium-Backbone** — Schema in `workshops.yaml` (Felder `premium`, `free_lessons`, `free_lesson_numbers`, `provider`), Werbe-Banner unter dem Trailer, Schloss-Karten für gesperrte Lektionen, URL-Guard im LessonDetail
-3. **Premium-Indikator auf Workshop-Karten** — Aurora-Rand + Stern-Badge in der Workshop-Liste, Anbieter-Strip mit Preis
-4. **Anbieter-Onboarding auf der Startseite** — Erklär-Sektion „Verkaufe deinen Kurs über Open Learn" mit YAML-Snippet
-5. **Creators-Seite Cinematic Redesign** — vollständige Premium-Sektion mit Konfigurations-Beispielen und Live-Demo-Link
+| Modus | Feld(er) |
+|---|---|
+| Kostenlos (wie heute) | `premium:` weggelassen oder `false` |
+| Komplett Premium | `premium: true` + kein `free_lessons` |
+| Premium mit Vorschau | `premium: true` + `free_lessons: N` **oder** `free_lesson_numbers: [a, b, c]` |
+| Pro-Video-Lock innerhalb einer Lektion | `section.video.premium: true` — Folge-Implementierung |
 
-## Demo-Workshop
+Plus `provider:` Block (Logo, Headline, Pitch, Bullets, `landing_url`, `accent_color`, Preis-Anzeige) für Branding und Verkaufs-CTA.
 
-Für jede der PRs ist ein Demo-Workshop live testbar:
+## Aufteilung in PRs
 
-- Repo: `openlearnapp/workshop-linux-grundlagen-preview`
-- Live: https://open-learn.app/workshop-linux-grundlagen-preview/
-- Anbieter (fiktiv): „LINUXPFAD Akademie"
-- Konfiguration: 3 freie Lektionen, 10 gesperrte, Verkaufs-URL als Platzhalter
+Die Implementierung läuft im Plattform-Repo `openlearnapp/openlearnapp.github.io`, ein PR pro Sektion:
 
-## Übergang vom Mockup zum Live-System
+1. **Bot-Refactor (Voraussetzung)** — Quizze ruhig inline statt animierter Roboter — [PR #292](https://github.com/openlearnapp/openlearnapp.github.io/pull/292), gemerged 2026-05-31
+2. **Premium-Backbone** — Schema + Anbieter-Werbe-Banner + Schloss-Lektionen + URL-Guard — [PR #294](https://github.com/openlearnapp/openlearnapp.github.io/pull/294), offen
+3. **Premium-Indikator auf Workshop-Karten** — Aurora-Rand + Stern-Badge + Anbieter-Strip in der Workshop-Liste — Folge-PR
+4. **Anbieter-Onboarding auf der Startseite** — Erklär-Sektion „Verkaufe deinen Kurs über Open Learn" mit YAML-Snippet — Folge-PR
+5. **Creators-Seite Cinematic Redesign** — vollständige Premium-Sektion mit Live-Demo-Verweis — Folge-PR
+6. **Video-Lock pro Lektion** — `section.video.premium: true`, Vorschau-Bild statt Player wenn gesperrt — Folge-PR
 
-Sobald PR 2 (Premium-Backbone) auf `open-learn.app` deployed ist, werden die Links in `fallbeispiel/1-ANBIETER/landing-page/index.html` und `unlock-email.html` von den lokalen Mockup-Dateien auf die echten Live-URLs umgestellt:
+## Wo Felix die Änderungen sieht
 
-- `2-OPENLEARN/workshops.html` → `https://open-learn.app/#/deutsch`
-- `2-OPENLEARN/workshop-unlocked.html` → `https://open-learn.app/#/deutsch/linux-grundlagen-preview/lessons`
+Nach Merge der jeweiligen PRs direkt auf **https://open-learn.app/**. Jeder Workshop-Anbieter, der `premium: true` in seine `workshops.yaml` setzt, bekommt automatisch das Premium-Rendering — Banner, Schlösser, Guard, Werbe-Inhalt.
 
-Die Mockup-Dateien bleiben im Repo als Vergleichsmaterial bzw. Fallback.
+Bis zum Merge testet Reza lokal über `pnpm dev`.
 
-## Was an diesem Plan offen ist
+## Was kein Bestandteil der Implementierung ist
 
-- Endgültiger Zugangs-Schutz: Path-as-Secret vs. signierte Tokens — wird in der Implementierung anhand des einfachsten produktiven Wegs festgelegt
-- Discovery-Modell (kuratierte Premium-Liste in der App?) — getrennter späterer Plan
-- Refunds und Umsatz-Verteilung — Geschäftsfragen, kein Implementierungs-Thema
+- Kein Account-System, kein Login
+- Kein Open-Learn-eigener Checkout — der Kauf passiert beim Anbieter
+- Keine Umsatzbeteiligung in der App selbst — Geschäftsfrage, kein Code
+
+## Offene Punkte für Folge-Iterationen
+
+- Endgültiger Zugangs-Schutz nach Kauf — Path-as-Secret vs. signierte Tokens
+- Auto-Unlock per `?unlock=<token>` URL-Parameter — `unlock_token`-Feld im Schema ist dafür reserviert
+- Discovery-Modell — getrennter späterer Plan
